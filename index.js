@@ -1,10 +1,6 @@
 var express = require('express');
 var app = express();
 
-const solve = require('rambo').solve
-const solution = solve("a", ["a"])
-console.log(solution.name)
-
 app.get('/', function (req, res) {
   const token = req.param('token') || ''
   let text = req.param('text') || ''
